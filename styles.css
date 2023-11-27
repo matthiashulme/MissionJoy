@@ -14,3 +14,11 @@ h4 {
 body {
   background-color: pink; /* Set the background color of the entire page */
 }
+
+.center-image {
+  text-align: center; /* Center-align inline elements */
+}
+
+.center-image img {
+  display: inline-block; /* Ensure the image behaves as an inline-block element */
+}
