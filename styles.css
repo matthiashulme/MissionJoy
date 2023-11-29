@@ -22,3 +22,9 @@ body {
 .center-image img {
   display: inline-block; /* Ensure the image behaves as an inline-block element */
 }
+
+#journalEntry {
+  width: 100%;
+  height: 200px; /* You can adjust the height as needed */
+}
+
