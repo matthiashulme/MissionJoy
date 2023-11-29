@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>About</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="journal.html">Journal</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="definitions.html">Definitions</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <h2>Daily Journal Entry</h2>
+      <form id="journalForm">
+        <label for="journalEntry">Enter Daily Journal entry:</label>
+        <textarea id="journalEntry" name="journalEntry"></textarea>
+        
+        <br> <!-- Add a line break for better spacing -->
+    
+        <input type="button" value="Submit" onclick="displayJournalEntry()">
+      </form>
+    
+      <div id="displayArea"></div>
+    
+      <script>
+        function displayJournalEntry() {
+          // Get the value from the input field
+          var journalEntry = document.getElementById("journalEntry").value;
+    
+          // Get the current date
+          var currentDate = new Date();
+          var formattedDate = currentDate.toDateString();
+    
+          // Display the value and date in a div below the submit button
+          var displayArea = document.getElementById("displayArea");
+          displayArea.innerHTML = "<p>Journal Entry for " + formattedDate + ": " +"<br>"  + journalEntry + "</p>" +
+                                  "</p>";
+        }
+      </script>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 MissionJoy</p>
+    </footer>
+  </body>
+</html>
