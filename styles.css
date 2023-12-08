@@ -74,3 +74,16 @@ body {
   content: counter(percentage) '%';
   animation: progress 2s 1 forwards;
 }
+
+a {
+  text-decoration: none; /* Remove underline */
+  color: brown; /* Set link color */
+  font-weight: bold; /* Make the text bold */
+  font-size: 18px;
+  transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+/* Change link color on hover */
+a:hover {
+  color: burlywood;
+}
