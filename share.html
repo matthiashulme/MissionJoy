@@ -3,15 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mission Joy</title>
+    <title>Daily Journal</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="sadFrog.jpg" />
-    <!-- You can create a separate CSS file if needed -->
   </head>
   <body>
-    <!-- Header Section -->
     <header>
-      <h1>Mission Joy</h1>
+      <h1>Daily Journal Entry</h1>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -24,53 +22,42 @@
       </nav>
     </header>
 
-    <!-- Main Content Section -->
     <section>
-      <h2>Welcome to the Home Page</h2>
-      <img src="bootstrap.jpg" alt="bootstrap" />
+      <h3>Share Your Journal with Others!</h3>
+      <input
+        type="checkbox"
+        id="sharemp"
+        name="sharemp"
+        value="missionpresident"
+      />
+      <label for="sharemp"> Mission President</label><br />
+      <input
+        type="checkbox"
+        id="companion"
+        name="companion"
+        value="companion"
+      />
+      <label for="companion">Companion</label><br />
+      <input type="checkbox" id="family" name="family" value="family" />
+      <label for="family">Family</label><br /><br />
 
-      <div class="journal-button">
-        <a href="journal.html">
-          <button type="button">Complete Today's Journal</button>
-        </a>
-        <br />
-        <br />
-        <div class="progress-bar">
-          <progress
-            value="100"
-            min="0"
-            max="100"
-            style="visibility: hidden; height: 0; width: 0"
-          >
-            100%
-          </progress>
-        </div>
-      </div>
-
-      <h4>Typical new missionary:</h4>
-
-      <div class="center-image">
-        <img src="sadFrog.jpg" alt="Sad Frog" />
-      </div>
-
-      <br />
-
-      <div class="center-image center-calendar">
-        <a href="history.html"><img src="calendar.jpg" alt="calendar" /></a>
-      </div>
-
-      <!-- Add your home page content here -->
-      <br />
       <div class="survey-button">
-        <a href="mhsurvey.html">
-          <button type="button">Complete Mental Health Survey</button>
+        <a href="index.html">
+          <button type="button" onclick="shareResults()">Share</button>
         </a>
       </div>
+
+      <script>
+        function shareResults() {
+          alert("Your journal has been shared!");
+        }
+      </script>
     </section>
 
-    <!-- Footer Section -->
-    <footer>
-      <div class="center-footer">
+    <br />
+    <br />
+    <footer class="center-footer">
+      <div>
         <h2>Need help? Follow Jesus!!</h2>
         <a
           href="https://www.churchofjesuschrist.org/get-help/mental-health?lang=eng"

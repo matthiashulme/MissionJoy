@@ -87,3 +87,7 @@ a {
 a:hover {
   color: burlywood;
 }
+
+.center-footer {
+  text-align: center;
+}
