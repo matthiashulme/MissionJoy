@@ -13,345 +13,333 @@
       <h1>Mental Health Survey</h1>
 
       <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Mission Joy</title>
-    <!-- Favicon-->
-    <link rel="icon" href="assets/img/sadFrog.jpg" />
-    <!-- Font Awesome icons (free version)-->
-    <script
-      src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Simple line icons-->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css"
-      rel="stylesheet"
-    />
-    <!-- Google fonts-->
-    <link
-      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
-  </head>
+      <html lang="en">
+        <head>
+          <meta charset="utf-8" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+          />
+          <meta name="description" content="" />
+          <meta name="author" content="" />
+          <title>Mission Joy</title>
+          <!-- Favicon-->
+          <link rel="icon" href="assets/img/sadFrog.jpg" />
+          <!-- Font Awesome icons (free version)-->
+          <script
+            src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
+            crossorigin="anonymous"
+          ></script>
+          <!-- Simple line icons-->
+          <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css"
+            rel="stylesheet"
+          />
+          <!-- Google fonts-->
+          <link
+            href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+            rel="stylesheet"
+            type="text/css"
+          />
+          <!-- Core theme CSS (includes Bootstrap)-->
+          <link href="css/styles.css" rel="stylesheet" />
+        </head>
 
-  <body id="page-top">
-    <!-- Navigation-->
-    <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
-    <nav id="sidebar-wrapper">
-      <ul class="sidebar-nav">
-        <li class="sidebar-brand"><a href="index.html">Home</a></li>
-        <li class="sidebar-nav-item"><a href="journal.html">Journal</a></li>
-        <li class="sidebar-nav-item"><a href="about.html">About</a></li>
-        <li class="sidebar-nav-item">
-          <a href="definitions.html">Definitions</a>
-        </li>
-        <li class="sidebar-nav-item"><a href="mhsurvey.html">Survey</a></li>
-        <li class="sidebar-nav-item"><a href="history.html">History</a></li>
-      </ul>
-    </nav>
-    <br />
-    <br />
-    <div class="container px-4 px-lg-5 text-center"></div>
+        <body id="page-top">
+          <!-- Navigation-->
+          <a class="menu-toggle rounded" href="#"
+            ><i class="fas fa-bars"></i
+          ></a>
+          <nav id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+              <li class="sidebar-brand"><a href="index.html">Home</a></li>
+              <li class="sidebar-nav-item">
+                <a href="journal.html">Journal</a>
+              </li>
+              <li class="sidebar-nav-item"><a href="about.html">About</a></li>
+              <li class="sidebar-nav-item">
+                <a href="definitions.html">Definitions</a>
+              </li>
+              <li class="sidebar-nav-item">
+                <a href="mhsurvey.html">Survey</a>
+              </li>
+              <li class="sidebar-nav-item">
+                <a href="history.html">History</a>
+              </li>
+            </ul>
+          </nav>
+          <br />
+          <br />
+          <div class="container px-4 px-lg-5 text-center"></div>
 
-    <section class="text-center">
-        <h2>Take the Survey to Check on Your Health!</h2>
-        <br />
-        <br />
+          <section class="text-center">
+            <h2>Take the Survey to Check on Your Health!</h2>
+            <br />
+            <br />
 
-        <section>
-          <h2>Anxiety Survey</h2>
-          <form id="anxietySurveyForm" onsubmit="evaluateAnxietySurvey(event)">
-            <!-- Anxiety Question 1 -->
-            <label for="anxietyQ1"
-              >Do you frequently experience restlessness or nervousness?</label
-            >
-            <input
-              type="radio"
-              id="anxietyQ1Yes"
-              name="anxietyQ1"
-              value="yes"
-              required
-            />
-            <label for="anxietyQ1Yes">Yes</label>
-            <input
-              type="radio"
-              id="anxietyQ1No"
-              name="anxietyQ1"
-              value="no"
-              required
-            />
-            <label for="anxietyQ1No">No</label>
+            <section>
+              <h2>Anxiety Survey</h2>
+              <form
+                id="anxietySurveyForm"
+                onsubmit="evaluateAnxietySurvey(event)"
+              >
+                <!-- Anxiety Question 1 -->
+                <label for="anxietyQ1"
+                  >Do you frequently experience restlessness or
+                  nervousness?</label
+                >
+                <input
+                  type="radio"
+                  id="anxietyQ1Yes"
+                  name="anxietyQ1"
+                  value="yes"
+                  required
+                />
+                <label for="anxietyQ1Yes">Yes</label>
+                <input
+                  type="radio"
+                  id="anxietyQ1No"
+                  name="anxietyQ1"
+                  value="no"
+                  required
+                />
+                <label for="anxietyQ1No">No</label>
+                <br /><br />
+
+                <!-- Anxiety Question 2 -->
+                <label for="anxietyQ2"
+                  >Do you often find it difficult to control worrying
+                  thoughts?</label
+                >
+                <input
+                  type="radio"
+                  id="anxietyQ2Yes"
+                  name="anxietyQ2"
+                  value="yes"
+                  required
+                />
+                <label for="anxietyQ2Yes">Yes</label>
+                <input
+                  type="radio"
+                  id="anxietyQ2No"
+                  name="anxietyQ2"
+                  value="no"
+                  required
+                />
+                <label for="anxietyQ2No">No</label>
+                <br /><br />
+
+                <!-- Anxiety Question 3 -->
+                <label for="anxietyQ3"
+                  >Do you experience muscle tension or physical discomfort due
+                  to stress?</label
+                >
+                <input
+                  type="radio"
+                  id="anxietyQ3Yes"
+                  name="anxietyQ3"
+                  value="yes"
+                  required
+                />
+                <label for="anxietyQ3Yes">Yes</label>
+                <input
+                  type="radio"
+                  id="anxietyQ3No"
+                  name="anxietyQ3"
+                  value="no"
+                  required
+                />
+                <label for="anxietyQ3No">No</label>
+                <br /><br />
+
+                <!-- Anxiety Question 4 -->
+                <label for="anxietyQ4"
+                  >Is it common for you to feel fatigued or easily tired?</label
+                >
+                <input
+                  type="radio"
+                  id="anxietyQ4Yes"
+                  name="anxietyQ4"
+                  value="yes"
+                  required
+                />
+                <label for="anxietyQ4Yes">Yes</label>
+                <input
+                  type="radio"
+                  id="anxietyQ4No"
+                  name="anxietyQ4"
+                  value="no"
+                  required
+                />
+                <label for="anxietyQ4No">No</label>
+                <br /><br />
+
+                <!-- Anxiety Question 5 -->
+                <label for="anxietyQ5"
+                  >Do you have difficulty concentrating or find your mind going
+                  blank?</label
+                >
+                <input
+                  type="radio"
+                  id="anxietyQ5Yes"
+                  name="anxietyQ5"
+                  value="yes"
+                  required
+                />
+                <label for="anxietyQ5Yes">Yes</label>
+                <input
+                  type="radio"
+                  id="anxietyQ5No"
+                  name="anxietyQ5"
+                  value="no"
+                  required
+                />
+                <label for="anxietyQ5No">No</label>
+                <br /><br />
+
+                <input type="submit" value="Submit Anxiety Survey" />
+              </form>
+              <br />
+
+              <div id="anxietySurveyResult"></div>
+            </section>
+            <br />
+            <br />
+
+            <section>
+              <h2>Depression Survey</h2>
+              <form
+                id="depressionSurveyForm"
+                onsubmit="evaluateDepressionSurvey(event)"
+              >
+                <!-- Depression Question 1 -->
+                <label for="depressionQ1"
+                  >Do you often feel persistently sad or down?</label
+                >
+                <input
+                  type="radio"
+                  id="depressionQ1Yes"
+                  name="depressionQ1"
+                  value="yes"
+                  required
+                />
+                <label for="depressionQ1Yes">Yes</label>
+                <input
+                  type="radio"
+                  id="depressionQ1No"
+                  name="depressionQ1"
+                  value="no"
+                  required
+                />
+                <label for="depressionQ1No">No</label>
+                <br /><br />
+
+                <!-- Depression Question 2 -->
+                <label for="depressionQ2"
+                  >Do you experience a significant decrease in interest or
+                  pleasure in activities?</label
+                >
+                <input
+                  type="radio"
+                  id="depressionQ2Yes"
+                  name="depressionQ2"
+                  value="yes"
+                  required
+                />
+                <label for="depressionQ2Yes">Yes</label>
+                <input
+                  type="radio"
+                  id="depressionQ2No"
+                  name="depressionQ2"
+                  value="no"
+                  required
+                />
+                <label for="depressionQ2No">No</label>
+                <br /><br />
+
+                <!-- Depression Question 3 -->
+                <label for="depressionQ3"
+                  >Have you noticed changes in your appetite or weight
+                  recently?</label
+                >
+                <input
+                  type="radio"
+                  id="depressionQ3Yes"
+                  name="depressionQ3"
+                  value="yes"
+                  required
+                />
+                <label for="depressionQ3Yes">Yes</label>
+                <input
+                  type="radio"
+                  id="depressionQ3No"
+                  name="depressionQ3"
+                  value="no"
+                  required
+                />
+                <label for="depressionQ3No">No</label>
+                <br /><br />
+
+                <!-- Depression Question 4 -->
+                <label for="depressionQ4"
+                  >Is it common for you to experience feelings of worthlessness
+                  or guilt?</label
+                >
+                <input
+                  type="radio"
+                  id="depressionQ4Yes"
+                  name="depressionQ4"
+                  value="yes"
+                  required
+                />
+                <label for="depressionQ4Yes">Yes</label>
+                <input
+                  type="radio"
+                  id="depressionQ4No"
+                  name="depressionQ4"
+                  value="no"
+                  required
+                />
+                <label for="depressionQ4No">No</label>
+                <br /><br />
+
+                <!-- Depression Question 5 -->
+                <label for="depressionQ5"
+                  >Do you struggle with sleep, either sleeping too much or too
+                  little?</label
+                >
+                <input
+                  type="radio"
+                  id="depressionQ5Yes"
+                  name="depressionQ5"
+                  value="yes"
+                  required
+                />
+                <label for="depressionQ5Yes">Yes</label>
+                <input
+                  type="radio"
+                  id="depressionQ5No"
+                  name="depressionQ5"
+                  value="no"
+                  required
+                />
+                <label for="depressionQ5No">No</label>
+                <br /><br />
+
+                <input type="submit" value="Submit Depression Survey" />
+              </form>
+              <br />
+
+              <div id="depressionSurveyResult"></div>
+            </section>
+            <br />
+            <br />
+
             <br /><br />
-    
-            <!-- Anxiety Question 2 -->
-            <label for="anxietyQ2"
-              >Do you often find it difficult to control worrying thoughts?</label
-            >
-            <input
-              type="radio"
-              id="anxietyQ2Yes"
-              name="anxietyQ2"
-              value="yes"
-              required
-            />
-            <label for="anxietyQ2Yes">Yes</label>
-            <input
-              type="radio"
-              id="anxietyQ2No"
-              name="anxietyQ2"
-              value="no"
-              required
-            />
-            <label for="anxietyQ2No">No</label>
-            <br /><br />
-    
-            <!-- Anxiety Question 3 -->
-            <label for="anxietyQ3"
-              >Do you experience muscle tension or physical discomfort due to
-              stress?</label
-            >
-            <input
-              type="radio"
-              id="anxietyQ3Yes"
-              name="anxietyQ3"
-              value="yes"
-              required
-            />
-            <label for="anxietyQ3Yes">Yes</label>
-            <input
-              type="radio"
-              id="anxietyQ3No"
-              name="anxietyQ3"
-              value="no"
-              required
-            />
-            <label for="anxietyQ3No">No</label>
-            <br /><br />
-    
-            <!-- Anxiety Question 4 -->
-            <label for="anxietyQ4"
-              >Is it common for you to feel fatigued or easily tired?</label
-            >
-            <input
-              type="radio"
-              id="anxietyQ4Yes"
-              name="anxietyQ4"
-              value="yes"
-              required
-            />
-            <label for="anxietyQ4Yes">Yes</label>
-            <input
-              type="radio"
-              id="anxietyQ4No"
-              name="anxietyQ4"
-              value="no"
-              required
-            />
-            <label for="anxietyQ4No">No</label>
-            <br /><br />
-    
-            <!-- Anxiety Question 5 -->
-            <label for="anxietyQ5"
-              >Do you have difficulty concentrating or find your mind going
-              blank?</label
-            >
-            <input
-              type="radio"
-              id="anxietyQ5Yes"
-              name="anxietyQ5"
-              value="yes"
-              required
-            />
-            <label for="anxietyQ5Yes">Yes</label>
-            <input
-              type="radio"
-              id="anxietyQ5No"
-              name="anxietyQ5"
-              value="no"
-              required
-            />
-            <label for="anxietyQ5No">No</label>
-            <br /><br />
-    
-            <input type="submit" value="Submit Anxiety Survey" />
-          </form>
-          <br>
-    
-          <div id="anxietySurveyResult"></div>
-        </section>
-        <br>
-        <br>
-    
-        <section>
-          <h2>Depression Survey</h2>
-          <form
-            id="depressionSurveyForm"
-            onsubmit="evaluateDepressionSurvey(event)"
-          >
-            <!-- Depression Question 1 -->
-            <label for="depressionQ1"
-              >Do you often feel persistently sad or down?</label
-            >
-            <input
-              type="radio"
-              id="depressionQ1Yes"
-              name="depressionQ1"
-              value="yes"
-              required
-            />
-            <label for="depressionQ1Yes">Yes</label>
-            <input
-              type="radio"
-              id="depressionQ1No"
-              name="depressionQ1"
-              value="no"
-              required
-            />
-            <label for="depressionQ1No">No</label>
-            <br /><br />
-    
-            <!-- Depression Question 2 -->
-            <label for="depressionQ2"
-              >Do you experience a significant decrease in interest or pleasure in
-              activities?</label
-            >
-            <input
-              type="radio"
-              id="depressionQ2Yes"
-              name="depressionQ2"
-              value="yes"
-              required
-            />
-            <label for="depressionQ2Yes">Yes</label>
-            <input
-              type="radio"
-              id="depressionQ2No"
-              name="depressionQ2"
-              value="no"
-              required
-            />
-            <label for="depressionQ2No">No</label>
-            <br /><br />
-    
-            <!-- Depression Question 3 -->
-            <label for="depressionQ3"
-              >Have you noticed changes in your appetite or weight recently?</label
-            >
-            <input
-              type="radio"
-              id="depressionQ3Yes"
-              name="depressionQ3"
-              value="yes"
-              required
-            />
-            <label for="depressionQ3Yes">Yes</label>
-            <input
-              type="radio"
-              id="depressionQ3No"
-              name="depressionQ3"
-              value="no"
-              required
-            />
-            <label for="depressionQ3No">No</label>
-            <br /><br />
-    
-            <!-- Depression Question 4 -->
-            <label for="depressionQ4"
-              >Is it common for you to experience feelings of worthlessness or
-              guilt?</label
-            >
-            <input
-              type="radio"
-              id="depressionQ4Yes"
-              name="depressionQ4"
-              value="yes"
-              required
-            />
-            <label for="depressionQ4Yes">Yes</label>
-            <input
-              type="radio"
-              id="depressionQ4No"
-              name="depressionQ4"
-              value="no"
-              required
-            />
-            <label for="depressionQ4No">No</label>
-            <br /><br />
-    
-            <!-- Depression Question 5 -->
-            <label for="depressionQ5"
-              >Do you struggle with sleep, either sleeping too much or too
-              little?</label
-            >
-            <input
-              type="radio"
-              id="depressionQ5Yes"
-              name="depressionQ5"
-              value="yes"
-              required
-            />
-            <label for="depressionQ5Yes">Yes</label>
-            <input
-              type="radio"
-              id="depressionQ5No"
-              name="depressionQ5"
-              value="no"
-              required
-            />
-            <label for="depressionQ5No">No</label>
-            <br /><br />
-    
-            <input type="submit" value="Submit Depression Survey" />
-          </form>
-          <br>
-    
-          <div id="depressionSurveyResult"></div>
-        </section>
-        <br>
-        <br>
-    
-    
-    
-        <br>
-        <h2>PTSD Survey</h2>
-    
-        <!-- Depression Question 4 -->
-        <label for="PTSDQ1"
-        >How often do you have flashbacks of being back in Vietnam?</label
-      >
-      <input
-        type="radio"
-        id="PTSDQ1"
-        name="PTSDQ1"
-        value="yes"
-        required
-      />
-      <label for="PTSDQ1">Yes</label>
-      <input
-        type="radio"
-        id="PTSDQ1"
-        name="PTSDQ1"
-        value="no"
-        required
-      />
-      <label for="PTSDQ1">No</label>
-      <br /><br />
-    
-    
-      <!-- <h2>Diahreah Survey</h2> -->
-    
-      <!-- Depression Question 4
+
+            <!-- <h2>Diahreah Survey</h2> -->
+
+            <!-- Depression Question 4
       <label for="DiQ1"
       >Do you often just poop liquid?</label
     >
@@ -372,158 +360,170 @@
     />
     <label for="DiQ1">No</label>
     <br /><br /> -->
-    
-        <script>
-          function evaluateAnxietySurvey(event) {
-            event.preventDefault();
-    
-            // Get the survey answers
-            const anxietyQ1 = document.querySelector(
-              'input[name="anxietyQ1"]:checked'
-            ).value;
-            const anxietyQ2 = document.querySelector(
-              'input[name="anxietyQ2"]:checked'
-            ).value;
-            const anxietyQ3 = document.querySelector(
-              'input[name="anxietyQ3"]:checked'
-            ).value;
-            const anxietyQ4 = document.querySelector(
-              'input[name="anxietyQ4"]:checked'
-            ).value;
-            const anxietyQ5 = document.querySelector(
-              'input[name="anxietyQ5"]:checked'
-            ).value;
-    
-            // Perform your logic to determine the result
-            const anxietyResult = determineAnxietyResult(
-              anxietyQ1,
-              anxietyQ2,
-              anxietyQ3,
-              anxietyQ4,
-              anxietyQ5
-            );
-            displayAnxietyResult(anxietyResult);
-          }
-    
-          function determineAnxietyResult(
-            answer1,
-            answer2,
-            answer3,
-            answer4,
-            answer5
-          ) {
-            // Implement your logic to determine the anxiety result
-            const yesCount = [answer1, answer2, answer3, answer4, answer5].filter(
-              (answer) => answer === "yes"
-            ).length;
-    
-            if (yesCount >= 4) {
-              return "You are likely suffering from severe anxiety.";
-            } else if (yesCount >= 2) {
-              return "You are likely suffering from moderate anxiety.";
-            } else {
-              return "You may not be suffering from anxiety but are showing some symptoms.";
-            }
-          }
-    
-          function displayAnxietyResult(result) {
-            const anxietySurveyResultDiv = document.getElementById(
-              "anxietySurveyResult"
-            );
-            anxietySurveyResultDiv.innerHTML = `<p>${result}</p>`;
-          }
-    
-          function evaluateDepressionSurvey(event) {
-            event.preventDefault();
-    
-            // Get the survey answers
-            const depressionQ1 = document.querySelector(
-              'input[name="depressionQ1"]:checked'
-            ).value;
-            const depressionQ2 = document.querySelector(
-              'input[name="depressionQ2"]:checked'
-            ).value;
-            const depressionQ3 = document.querySelector(
-              'input[name="depressionQ3"]:checked'
-            ).value;
-            const depressionQ4 = document.querySelector(
-              'input[name="depressionQ4"]:checked'
-            ).value;
-            const depressionQ5 = document.querySelector(
-              'input[name="depressionQ5"]:checked'
-            ).value;
-    
-            // Perform your logic to determine the result
-            const depressionResult = determineDepressionResult(
-              depressionQ1,
-              depressionQ2,
-              depressionQ3,
-              depressionQ4,
-              depressionQ5
-            );
-            displayDepressionResult(depressionResult);
-          }
-    
-          function determineDepressionResult(
-            answer1,
-            answer2,
-            answer3,
-            answer4,
-            answer5
-          ) {
-            // Implement your logic to determine the depression result
-            const yesCount = [answer1, answer2, answer3, answer4, answer5].filter(
-              (answer) => answer === "yes"
-            ).length;
-    
-            if (yesCount >= 4) {
-              return "You are likely suffering from severe depression.";
-            } else if (yesCount >= 2) {
-              return "You are likely suffering from moderate depression.";
-            } else {
-              return "You may not be suffering from depression but are showing some symptoms.";
-            }
-          }
-    
-          function displayDepressionResult(result) {
-            const depressionSurveyResultDiv = document.getElementById(
-              "depressionSurveyResult"
-            );
-            depressionSurveyResultDiv.innerHTML = `<p>${result}</p>`;
-          }
-        </script>
-  
-      </section>
-    <br />
-    <br />
-    <br />
 
-    <!-- Footer-->
-    <footer class="footer text-center">
-      <h3>Need Help Follow Jesus!</h3>
-      <div class="container px-4 px-lg-5">
-        <li class="list-inline-item">
-          <a
-            class="btn btn-primary col fit-content"
-            href="https://www.churchofjesuschrist.org/get-help/mental-health?lang=eng"
-            >Mental Health Resources</a
-          >
-          <a
-            class="btn btn-primary col fit-content"
-            href="https://www.churchofjesuschrist.org/study/scriptures/bofm?lang=eng"
-            >The Book of Mormon</a
-          >
-        </li>
-        <p class="text-muted small mb-0">Copyright &copy; MissionJoy 2023</p>
-      </div>
-    </footer>
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top"
-      ><i class="fas fa-angle-up"></i
-    ></a>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
+            <script>
+              function evaluateAnxietySurvey(event) {
+                event.preventDefault();
+
+                // Get the survey answers
+                const anxietyQ1 = document.querySelector(
+                  'input[name="anxietyQ1"]:checked'
+                ).value;
+                const anxietyQ2 = document.querySelector(
+                  'input[name="anxietyQ2"]:checked'
+                ).value;
+                const anxietyQ3 = document.querySelector(
+                  'input[name="anxietyQ3"]:checked'
+                ).value;
+                const anxietyQ4 = document.querySelector(
+                  'input[name="anxietyQ4"]:checked'
+                ).value;
+                const anxietyQ5 = document.querySelector(
+                  'input[name="anxietyQ5"]:checked'
+                ).value;
+
+                // Perform your logic to determine the result
+                const anxietyResult = determineAnxietyResult(
+                  anxietyQ1,
+                  anxietyQ2,
+                  anxietyQ3,
+                  anxietyQ4,
+                  anxietyQ5
+                );
+                displayAnxietyResult(anxietyResult);
+              }
+
+              function determineAnxietyResult(
+                answer1,
+                answer2,
+                answer3,
+                answer4,
+                answer5
+              ) {
+                // Implement your logic to determine the anxiety result
+                const yesCount = [
+                  answer1,
+                  answer2,
+                  answer3,
+                  answer4,
+                  answer5,
+                ].filter((answer) => answer === "yes").length;
+
+                if (yesCount >= 4) {
+                  return "You are likely suffering from severe anxiety.";
+                } else if (yesCount >= 2) {
+                  return "You are likely suffering from moderate anxiety.";
+                } else {
+                  return "You may not be suffering from anxiety but are showing some symptoms.";
+                }
+              }
+
+              function displayAnxietyResult(result) {
+                const anxietySurveyResultDiv = document.getElementById(
+                  "anxietySurveyResult"
+                );
+                anxietySurveyResultDiv.innerHTML = `<p>${result}</p>`;
+              }
+
+              function evaluateDepressionSurvey(event) {
+                event.preventDefault();
+
+                // Get the survey answers
+                const depressionQ1 = document.querySelector(
+                  'input[name="depressionQ1"]:checked'
+                ).value;
+                const depressionQ2 = document.querySelector(
+                  'input[name="depressionQ2"]:checked'
+                ).value;
+                const depressionQ3 = document.querySelector(
+                  'input[name="depressionQ3"]:checked'
+                ).value;
+                const depressionQ4 = document.querySelector(
+                  'input[name="depressionQ4"]:checked'
+                ).value;
+                const depressionQ5 = document.querySelector(
+                  'input[name="depressionQ5"]:checked'
+                ).value;
+
+                // Perform your logic to determine the result
+                const depressionResult = determineDepressionResult(
+                  depressionQ1,
+                  depressionQ2,
+                  depressionQ3,
+                  depressionQ4,
+                  depressionQ5
+                );
+                displayDepressionResult(depressionResult);
+              }
+
+              function determineDepressionResult(
+                answer1,
+                answer2,
+                answer3,
+                answer4,
+                answer5
+              ) {
+                // Implement your logic to determine the depression result
+                const yesCount = [
+                  answer1,
+                  answer2,
+                  answer3,
+                  answer4,
+                  answer5,
+                ].filter((answer) => answer === "yes").length;
+
+                if (yesCount >= 4) {
+                  return "You are likely suffering from severe depression.";
+                } else if (yesCount >= 2) {
+                  return "You are likely suffering from moderate depression.";
+                } else {
+                  return "You may not be suffering from depression but are showing some symptoms.";
+                }
+              }
+
+              function displayDepressionResult(result) {
+                const depressionSurveyResultDiv = document.getElementById(
+                  "depressionSurveyResult"
+                );
+                depressionSurveyResultDiv.innerHTML = `<p>${result}</p>`;
+              }
+            </script>
+          </section>
+          <br />
+          <br />
+          <br />
+
+          <!-- Footer-->
+          <footer class="footer text-center">
+            <h3>Need Help Follow Jesus!</h3>
+            <div class="container px-4 px-lg-5">
+              <li class="list-inline-item">
+                <a
+                  class="btn btn-primary col fit-content"
+                  href="https://www.churchofjesuschrist.org/get-help/mental-health?lang=eng"
+                  >Mental Health Resources</a
+                >
+                <a
+                  class="btn btn-primary col fit-content"
+                  href="https://www.churchofjesuschrist.org/study/scriptures/bofm?lang=eng"
+                  >The Book of Mormon</a
+                >
+              </li>
+              <p class="text-muted small mb-0">
+                Copyright &copy; MissionJoy 2023
+              </p>
+            </div>
+          </footer>
+          <!-- Scroll to Top Button-->
+          <a class="scroll-to-top rounded" href="#page-top"
+            ><i class="fas fa-angle-up"></i
+          ></a>
+          <!-- Bootstrap core JS-->
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+          <!-- Core theme JS-->
+          <script src="js/scripts.js"></script>
+        </body>
+      </html>
+    </header>
   </body>
 </html>
