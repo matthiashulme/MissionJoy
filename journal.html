@@ -1,87 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daily Journal</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="sadFrog.jpg" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Mission Joy</title>
+    <!-- Favicon-->
+    <link rel="icon" href="assets/img/sadFrog.jpg" />
+    <!-- Font Awesome icons (free version)-->
+    <script
+      src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Simple line icons-->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
   </head>
-  <body>
-    <header>
-      <h1>Daily Journal Entry</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="journal.html">Journal</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="definitions.html">Definitions</a></li>
-          <li><a href="mhsurvey.html">Survey</a></li>
-          <li><a href="history.html">History</a></li>
-        </ul>
-      </nav>
-    </header>
+
+  <body id="page-top">
+    <!-- Navigation-->
+    <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <li class="sidebar-brand"><a href="index.html">Home</a></li>
+        <li class="sidebar-nav-item"><a href="journal.html">Journal</a></li>
+        <li class="sidebar-nav-item"><a href="about.html">About</a></li>
+        <li class="sidebar-nav-item">
+          <a href="definitions.html">Definitions</a>
+        </li>
+        <li class="sidebar-nav-item"><a href="mhsurvey.html">Survey</a></li>
+        <li class="sidebar-nav-item"><a href="history.html">History</a></li>
+      </ul>
+    </nav>
+    <br />
+    <br />
+    <div class="container px-4 px-lg-5 text-center"></div>
 
     <section>
-      <h2 class>Daily Journal Entry</h2>
-      <form id="journalForm">
-        <label for="journalEntry">Enter Daily Journal entry:</label>
-        <textarea id="journalEntry" name="journalEntry"></textarea>
-
+        <h2 class="text-center">Daily Journal Entry</h2>
         <br />
-        <!-- Add a line break for better spacing -->
+        <br />
+        <br />
+        <form class="text-center" id="journalForm">
+          <label for="journalEntry">Enter Daily Journal entry:</label>
+          <br />
+          <textarea style="height:300px;width:600px;font-size:14pt;" id="journalEntry" name="journalEntry"></textarea>
+          <br />
 
-        <input type="button" value="Submit" onclick="displayJournalEntry()" />
-      </form>
-
-      <div id="displayArea"></div>
-
-      <script>
-        function displayJournalEntry() {
-          // Get the value from the input field
-          var journalEntry = document.getElementById("journalEntry").value;
-
-          // Get the current date
-          var currentDate = new Date();
-          var formattedDate = currentDate.toDateString();
-
-          // Display the value and date in a div below the submit button
-          var displayArea = document.getElementById("displayArea");
-          displayArea.innerHTML =
-            "<p>Journal Entry for " +
-            formattedDate +
-            ": " +
-            "<br>" +
-            "<br>" +
-            journalEntry +
-            "</p>" +
-            "</p>";
-        }
-      </script>
+          <div>
+            <a href="share.html">
+              <button class="btn btn-primary" type="button">Share Journal Entry</button>
+            </a>
+          </div>
+  
+        </form>
+        <div id="displayArea"></div>
     </section>
     <br />
-    <div class="survey-button">
-      <a href="share.html">
-        <button type="button">Share Journal Entry</button>
-      </a>
-    </div>
     <br />
-    <footer class="center-footer">
-      <div>
-        <h2>Need help? Follow Jesus!!</h2>
-        <a
-          href="https://www.churchofjesuschrist.org/get-help/mental-health?lang=eng"
-          target="_blank"
-          >Church Mental Help Resources</a
-        >
-        <br /><br />
-        <a
-          href="https://www.churchofjesuschrist.org/study/scriptures/bofm?lang=eng"
-          target="_blank"
-          >Reading the Book of Mormon will make you feel better :)</a
-        >
+    <br />
+    <br />
+    <br />
+
+    <!-- Footer-->
+    <footer class="footer text-center">
+      <h3>Need Help Follow Jesus!</h3>
+      <div class="container px-4 px-lg-5">
+        <li class="list-inline-item">
+          <a
+            class="btn btn-primary col fit-content"
+            href="https://www.churchofjesuschrist.org/get-help/mental-health?lang=eng"
+            >Mental Health Resources</a
+          >
+          <a
+            class="btn btn-primary col fit-content"
+            href="https://www.churchofjesuschrist.org/study/scriptures/bofm?lang=eng"
+            >The Book of Mormon</a
+          >
+        </li>
+        <p class="text-muted small mb-0">Copyright &copy; MissionJoy 2023</p>
       </div>
-      <p>&copy; 2023 MissionJoy. All rights reserved.</p>
     </footer>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top"
+      ><i class="fas fa-angle-up"></i
+    ></a>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
   </body>
 </html>
