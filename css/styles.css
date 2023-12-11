@@ -11146,3 +11146,20 @@ footer.footer .social-link:hover {
     height: 300px;
   }
 }
+
+.box {
+  display: align;
+  display: inline-block;
+  position: relative;
+  max-width: 60em;
+  margin: 0 auto;
+  color: black;
+}
+
+.box-outline {
+  display: align;
+  display: inline-block;
+  position: relative;
+  max-width: 60em;
+  color: #1D809F;
+}
